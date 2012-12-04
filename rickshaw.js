@@ -30,7 +30,7 @@ var Rickshaw = {
 };
 
 if (typeof module !== 'undefined' && module.exports) {
-	var d3 = require('d3');
+	var d3 = new require('d3')();
 	module.exports = Rickshaw;
 }
 
