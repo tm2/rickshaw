@@ -12,6 +12,7 @@
   "scripts": [
     "rickshaw.js"
   ],
+  "main": "rickshaw.js",
   "styles": [
     "rickshaw.css"
   ]
