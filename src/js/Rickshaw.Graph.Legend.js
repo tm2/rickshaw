@@ -13,14 +13,20 @@ Rickshaw.Graph.Legend = function(args) {
 	element.appendChild(list);
 
 	var series = graph.series
-		.map( function(s) { return s } )
-		.reverse();
+		.map( function(s) { return s } );
+
+	if (!args.naturalOrder) {
+		series = series.reverse();
+	}
 
 	this.lines = [];
 
 	this.addLine = function (series) {
 		var line = document.createElement('li');
 		line.className = 'line';
+		if (series.disabled) {
+			line.className += ' disabled';
+		}
 
 		var swatch = document.createElement('div');
 		swatch.className = 'swatch';
