@@ -10,10 +10,12 @@
   "development": {},
   "license": "MIT",
   "scripts": [
-    "rickshaw.js"
+    "rickshaw.js",
+    "extensions.js"
   ],
   "main": "rickshaw.js",
   "styles": [
-    "rickshaw.css"
+    "rickshaw.css",
+    "extensions.css"
   ]
 }
